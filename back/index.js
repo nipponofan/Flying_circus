@@ -25,7 +25,8 @@ app.get('/', (req, res) => {
 // For example all the user's routes start by '/routes_for_user'
 // And will be define in the routes directory by user.js
 // Result :
-// app.use("/routes_for_user", route.user)
+// 
+app.use("/wild_flying_circus", route.user)
 
 app.listen(port, err => {
     if (err){ throw new Error('👎 👎  -- Something bad happened... server not connected -- 👎 👎 ')}
