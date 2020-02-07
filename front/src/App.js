@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import background from "./assets/background.jpg";
 
 import TourCard from "./component/TourCard";
 import "./App.css";
@@ -33,7 +34,6 @@ const App = () => {
             name={tourItem.name}
             date_start={tourItem.date_start}
             date_end={tourItem.date_end}
-            handlerepresentation={handlerepresentation()}
           />
         ))}
       </>
